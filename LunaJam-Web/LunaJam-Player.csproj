@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{C8D4FD01-837B-4D6B-A1B9-77C8A33DE08A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Engine\EzGUI\assets\fonts\desyrel.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\fonts\Skranji-Bold-40.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\bomb1-selected.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\bomb1.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\bomb2-selected.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\bomb2.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\bomb3-selected.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\bomb3.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\gamelogo.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\level-box.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\lvlcomplete.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\orange-btn.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\panel-650x400.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\img\star2.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-bg-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-bl-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-bl.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-br-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-br.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-tl-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-tl.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-tr-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-corner-tr.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-b-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-b.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-l-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-l.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-r-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-r.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-t-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-blue-line-t.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-bg-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-bl-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-bl.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-br-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-br.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-tl-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-tl.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-tr-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-corner-tr.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-b-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-b.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-l-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-l.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-r-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-r.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-t-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\btn-grey-line-t.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\chk-blue-checkmark.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\chk-grey-checkmark.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\chk-grey-corner.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\down-grey-slide-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\down-grey-slide.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\radio-blue-check.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\radio-grey-check.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\sld-grey-bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\sld-grey-corner.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\sld-grey-line.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\wnd-grey-bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\wnd-grey-corner.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\images\wnd-grey-line.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\kenney-theme.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\feathers-metal-works-desktop-theme.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\bg-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\btn-bg-down.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\btn-bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\btn-corner.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\btn-line.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\chk-checkmark.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\corner.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\darkcnt-corner.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\darkcnt-line.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\header-bg.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\line.png" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\images\radio-checkmark.png" />
+    <Content Include="Assets\Engine\EzGUI\EZGUI.js" />
+    <Content Include="Assets\Engine\EzGUI\phaser-compat-2.4.js" />
+    <Content Include="Assets\Engine\MidiReader\MIDIFile.js" />
+    <Content Include="Assets\Engine\Phaser\phaser.js" />
+    <Content Include="Assets\Engine\Phaser\phaser.min.js" />
+    <Content Include="Assets\Filters\Gray.js" />
+    <Content Include="Assets\Music\song.mid" />
+    <Content Include="Assets\Music\song.mp3" />
+    <Content Include="Assets\Music\test2.mid" />
+    <Content Include="Assets\Sounds\tink.mp3" />
+    <Content Include="Assets\Sprites\Loading\loading_bar.png" />
+    <Content Include="Assets\Sprites\Loading\loading_bg.png" />
+    <Content Include="Assets\Sprites\logo.png" />
+    <Content Include="Assets\Sprites\LvlComplete\lvlcomplete.png" />
+    <Content Include="Assets\Sprites\LvlComplete\orange-btn.png" />
+    <Content Include="Assets\Sprites\LvlComplete\panel-650x400.png" />
+    <Content Include="Assets\Sprites\Menu\btn_play.png" />
+    <Content Include="Assets\Sprites\Menu\levels.png" />
+    <Content Include="Assets\Sprites\Menu\modes.png" />
+    <Content Include="Assets\Sprites\Menu\play.png" />
+    <Content Include="Assets\Sprites\Notes\long_press.png" />
+    <Content Include="Assets\Sprites\Notes\note1.png" />
+    <Content Include="Assets\Sprites\Notes\note2.png" />
+    <Content Include="Assets\Sprites\Notes\note3.png" />
+    <Content Include="Assets\Sprites\Notes\note4.png" />
+    <Content Include="Assets\Sprites\Notes\note5.png" />
+    <Content Include="Assets\Sprites\Notes\note_pressed.png" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Assets\Components\MasterGroup.ts" />
+    <TypeScriptCompile Include="Assets\Engine\Collection\collections.ts" />
+    <TypeScriptCompile Include="Assets\Engine\EzGUI\EZGUI.d.ts" />
+    <TypeScriptCompile Include="Assets\Engine\MidiReader\MIDIFile.d.ts" />
+    <TypeScriptCompile Include="Assets\Components\NoteSequencer.ts" />
+    <TypeScriptCompile Include="Assets\Engine\Phaser\p2.d.ts" />
+    <TypeScriptCompile Include="Assets\Engine\Phaser\phaser.comments.d.ts" />
+    <TypeScriptCompile Include="Assets\Engine\Phaser\pixi.comments.d.ts" />
+    <TypeScriptCompile Include="Assets\Prefabs\MIDINote.ts" />
+    <TypeScriptCompile Include="Assets\Prefabs\Note.ts" />
+    <TypeScriptCompile Include="Assets\Prefabs\NotePress.ts" />
+    <TypeScriptCompile Include="Assets\Prefabs\NoteType.ts" />
+    <TypeScriptCompile Include="Assets\Prefabs\ScoreBoard.ts" />
+    <TypeScriptCompile Include="Assets\Settings\Controls.ts" />
+    <TypeScriptCompile Include="Assets\Settings\Texture.ts" />
+    <TypeScriptCompile Include="Assets\Settings\Colors.ts" />
+    <TypeScriptCompile Include="Assets\Settings\Difficulty.ts" />
+    <TypeScriptCompile Include="Boot.ts" />
+    <TypeScriptCompile Include="GamePlay.ts" />
+    <TypeScriptCompile Include="MainMenu.ts" />
+    <TypeScriptCompile Include="PostGame.ts" />
+    <TypeScriptCompile Include="Preloader.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Music\song.ogg" />
+    <Content Include="Assets\Engine\EzGUI\EZGUI.js.map" />
+    <Content Include="Assets\Engine\EzGUI\assets\fonts\desyrel.fnt" />
+    <Content Include="Assets\Engine\EzGUI\assets\fonts\Skranji-Bold-40.fnt" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\kenney-atlas.json" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\kenney-theme.json" />
+    <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\theme.tps" />
+    <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\metalworks-theme.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>LunaJam_Player</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>LunaJam-Player</AssemblyName>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14584</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14584/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile>game.js</TypeScriptOutFile>
+    <TypeScriptOutDir>
+    </TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+</Project>
