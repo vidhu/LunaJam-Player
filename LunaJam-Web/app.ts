@@ -2,8 +2,8 @@
 
 	export class Game extends Phaser.Game {
 
-		constructor() {
-            super(900, 369, Phaser.AUTO, 'content', null);
+		constructor(elementId: string) {
+            super(900, 369, Phaser.AUTO, elementId, null);
 			
             this.state.add('Boot', Boot, false);
             this.state.add('Preloader', Preloader, false);
@@ -16,7 +16,3 @@
 
     }
 }
-
-window.onload = () => {
-	var game = new LunaJam.Game();
-};
