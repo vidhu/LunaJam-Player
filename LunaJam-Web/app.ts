@@ -2,9 +2,13 @@
 
 	export class Game extends Phaser.Game {
 
-		constructor(elementId: string) {
+        public assetRoot: string;
+
+        constructor(elementId: string, assetRoot: string) {
             super(900, 369, Phaser.AUTO, elementId, null);
 			
+            this.assetRoot = assetRoot;
+
             this.state.add('Boot', Boot, false);
             this.state.add('Preloader', Preloader, false);
             this.state.add('MainMenu', MainMenu, false);

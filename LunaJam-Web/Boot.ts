@@ -2,10 +2,14 @@
 
 	export class Boot extends Phaser.State{
 		
-		preload(): void {
-			this.load.image("loading_bg", "Assets/Sprites/Loading/loading_bg.png");
-            this.load.image("loading_bar", "Assets/Sprites/Loading/loading_bar.png");
+        
 
+        preload(): void {
+            var assetRoot = (<LunaJam.Game>this.game).assetRoot;
+
+            this.load.image("loading_bg", assetRoot + "/Sprites/Loading/loading_bg.png");
+            this.load.image("loading_bar", assetRoot + "/Sprites/Loading/loading_bar.png");
+            
             //Load physics system
             this.game.physics.startSystem(Phaser.Physics.ARCADE);
 		}

@@ -4,7 +4,9 @@
 
 		loadingBar: Phaser.Sprite;
 
-		preload() {
+        preload() {
+            var assetRoot = (<LunaJam.Game>this.game).assetRoot;
+
 			//Loading Bar
 			this.add.sprite(this.world.centerX, this.world.centerY, "loading_bg").anchor.set(0.5, 0.5);
 			this.loadingBar = this.add.sprite(this.world.centerX, this.world.centerY, "loading_bar");
@@ -18,25 +20,25 @@
             this.load.script('filterX', 'https://cdn.rawgit.com/photonstorm/phaser/master/filters/BlurX.js');
             this.load.script('filterY', 'https://cdn.rawgit.com/photonstorm/phaser/master/filters/BlurY.js');
 
-			this.load.image("logo", "Assets/Sprites/logo.png");
-            this.load.image("img_background", "Assets/Sprites/background.jpg", true);
-            this.load.image("img_stage", "Assets/Sprites/stage.jpg", true);
-			this.load.image("img_note1", "Assets/Sprites/Notes/note1.png", true);
-			this.load.image("img_note2", "Assets/Sprites/Notes/note2.png", true);
-			this.load.image("img_note3", "Assets/Sprites/Notes/note3.png", true);
-			this.load.image("img_note4", "Assets/Sprites/Notes/note4.png", true);
-            this.load.image("img_note5", "Assets/Sprites/Notes/note5.png", true);
-            this.load.image("img_playbtn", "Assets/Sprites/Menu/btn_play.png", true);
+            this.load.image("logo", assetRoot + "/Sprites/logo.png");
+            this.load.image("img_background", assetRoot + "/Sprites/background.jpg", true);
+            this.load.image("img_stage", assetRoot + "/Sprites/stage.jpg", true);
+            this.load.image("img_note1", assetRoot + "/Sprites/Notes/note1.png", true);
+            this.load.image("img_note2", assetRoot + "/Sprites/Notes/note2.png", true);
+            this.load.image("img_note3", assetRoot + "/Sprites/Notes/note3.png", true);
+            this.load.image("img_note4", assetRoot + "/Sprites/Notes/note4.png", true);
+            this.load.image("img_note5", assetRoot + "/Sprites/Notes/note5.png", true);
+            this.load.image("img_playbtn", assetRoot + "/Sprites/Menu/btn_play.png", true);
 
 
-            this.load.spritesheet("img_note_pressed", "Assets/Sprites/Notes/note_pressed.png", 44, 44, 5);
-            this.load.spritesheet("img_modes", "Assets/Sprites/Menu/modes.png", 204, 318, 4, 2);
-            this.load.spritesheet("img_levels", "Assets/Sprites/Menu/levels.png", 202, 81, 4);
+            this.load.spritesheet("img_note_pressed", assetRoot + "/Sprites/Notes/note_pressed.png", 44, 44, 5);
+            this.load.spritesheet("img_modes", assetRoot + "/Sprites/Menu/modes.png", 204, 318, 4, 2);
+            this.load.spritesheet("img_levels", assetRoot + "/Sprites/Menu/levels.png", 202, 81, 4);
             
 
-            this.load.audio("song_file", ["Assets/Music/song.ogg", "Assets/Music/song.mp3"], true);
+            this.load.audio("song_file", [assetRoot + "/Music/song.ogg", assetRoot + "/Music/song.mp3"], true);
 
-			this.load.binary("midi_file", "Assets/Music/song.mid", (key, data) => {
+            this.load.binary("midi_file", assetRoot + "/Music/song.mid", (key, data) => {
 				return data; 
             });
 
