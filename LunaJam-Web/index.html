@@ -12,7 +12,16 @@
     <script src="game.js"></script>
     <script type="text/javascript">
         window.onload = function(){
-            var game = new LunaJam.Game('content', 'Assets');
+            var song = {
+                mid: "Assets/Music/song.mid",
+                track: "Assets/Music/song.ogg",
+                meta: {
+                    title: "title",
+                    album: "album",
+                    artist:"artist"
+                }
+            };
+            var game = new LunaJam.Game('content', 'Assets', song);
         }
     </script>
 </head>

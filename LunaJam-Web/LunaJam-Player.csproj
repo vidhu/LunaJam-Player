@@ -165,6 +165,7 @@
     <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\kenney-theme.json" />
     <Content Include="Assets\Engine\EzGUI\assets\kenney-theme\theme.tps" />
     <Content Include="Assets\Engine\EzGUI\assets\metalworks-theme\metalworks-theme.json" />
+    <None Include="t.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

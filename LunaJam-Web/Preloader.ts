@@ -6,6 +6,7 @@
 
         preload() {
             var assetRoot = (<LunaJam.Game>this.game).assetRoot;
+            var song = (<LunaJam.Game>this.game).song;
 
 			//Loading Bar
 			this.add.sprite(this.world.centerX, this.world.centerY, "loading_bg").anchor.set(0.5, 0.5);
@@ -36,9 +37,9 @@
             this.load.spritesheet("img_levels", assetRoot + "/Sprites/Menu/levels.png", 202, 81, 4);
             
 
-            this.load.audio("song_file", [assetRoot + "/Music/song.ogg", assetRoot + "/Music/song.mp3"], true);
+            this.load.audio("song_file", [song.track], true);
 
-            this.load.binary("midi_file", assetRoot + "/Music/song.mid", (key, data) => {
+            this.load.binary("midi_file", song.mid, (key, data) => {
 				return data; 
             });
 
